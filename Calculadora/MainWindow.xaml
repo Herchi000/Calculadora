@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculadora"
         mc:Ignorable="d"
-        Title="Calcualadora" Height="450" Width="400" ResizeMode="CanMinimize">
-    <Grid>
-        
-    </Grid>
+        Title="Calcualadora" Height="500" Width="400" ResizeMode="CanMinimize">
+	<Grid x:Name="Contenedor" Margin="0" Background="#FF252525">
+		<TextBox x:Name="PanelMostrador" BorderThickness="2" HorizontalAlignment="Center" Height="71" Margin="5" TextWrapping="Wrap" Text="Resultados" VerticalAlignment="Top" Width="374" Background="#FFFFFAD1" MinWidth="100" MinHeight="30"/>
+		<Grid HorizontalAlignment="Left" Height="333" Margin="10,127,0,0" VerticalAlignment="Top" Width="374">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+
+			<Button x:Name="Igual" Content="=" Grid.Column="3" Grid.Row="5" Background="#FFFF6060" FontWeight="Bold" FontSize="15" />
+			
+			<!--Numbers-->
+			<Button x:Name="Cero" Content="0" Grid.Column="1" Grid.Row="5" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Uno" Content="1" Grid.Column="0" Grid.Row="4" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Dos" Content="2" Grid.Column="1" Grid.Row="4" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Tres" Content="3" Grid.Column="2" Grid.Row="4" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Cuatro" Content="4" Grid.Column="0" Grid.Row="3" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Cinco" Content="5" Grid.Column="1" Grid.Row="3" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Seis" Content="6" Grid.Column="2" Grid.Row="3" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Siete" Content="7" Grid.Column="0" Grid.Row="2" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Ocho" Content="8" Grid.Column="1" Grid.Row="2" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White"/>
+			<Button x:Name="Nueve" Content="9" Grid.Column="2" Grid.Row="2" Background="#FF595959" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Pi" Content="π" Grid.Column="0" Grid.Row="5" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Coma" Content="," Grid.Column="2" Grid.Row="5" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			
+			<!--Simbolos-->
+			<Button x:Name="Porciento" Content="%" Grid.Column="0" Grid.Row="0" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="CE" Content="CE" Grid.Column="1" Grid.Row="0" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="C" Content="C" Grid.Column="2" Grid.Row="0" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Borrar" Content="Del" Grid.Column="3" Grid.Row="0" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Fraccion" Content="n/m" Grid.Column="0" Grid.Row="1" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Potencia" Content="x^n" Grid.Column="1" Grid.Row="1" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Raiz" Content="n√x" Grid.Column="2" Grid.Row="1" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Division" Content="/" Grid.Column="3" Grid.Row="1" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Multiplicacion" Content="x" Grid.Column="3" Grid.Row="2" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Resta" Content="-" Grid.Column="3" Grid.Row="3" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			<Button x:Name="Suma" Content="+" Grid.Column="3" Grid.Row="4" Background="#FF424141" FontWeight="Bold" FontSize="15" Foreground="White" />
+			
+		</Grid>
+
+	</Grid>
 </Window>
