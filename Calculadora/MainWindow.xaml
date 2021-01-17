@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="Calcualadora" Height="500" Width="400" ResizeMode="CanMinimize">
 	<Grid x:Name="Contenedor" Margin="0" Background="#FF252525">
-		
-		<TextBox x:Name="PanelMostrador" BorderThickness="2" TextAlignment="Right" HorizontalAlignment="Center" Height="71" Margin="5" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="374" Background="#FFFFFAD1" MinWidth="100" MinHeight="30" FontFamily="Consolas" FontSize="20" FontWeight="Bold"/>
-		
+
+		<TextBox x:Name="PanelResultado" BorderThickness="0" TextAlignment="Right" HorizontalAlignment="Center" Height="56" Width="374" TextWrapping="Wrap" Margin="10,5,10,0" Text="" IsReadOnly="False" VerticalAlignment="Top" Background="#000" FontFamily="Consolas" FontSize="20" FontWeight="Bold" Foreground="White"/>
+		<TextBox x:Name="PanelMostrador" BorderThickness="2" TextAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Center" Height="41" Width="374" TextWrapping="Wrap" Margin="10,61,10,0" Text="" IsReadOnly="True" VerticalAlignment="Top" Background="Red" MinWidth="100" MinHeight="30" FontFamily="Consolas" FontSize="20" FontWeight="Bold"/>
+		<TextBox x:Name="PanelMostradorReal" BorderThickness="2" TextAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Center" Height="41" Width="374" TextWrapping="Wrap" Margin="10,61,10,0" Text="" IsReadOnly="True" VerticalAlignment="Top" Background="#FFFFFAD1" MinWidth="100" MinHeight="30" FontFamily="Consolas" FontSize="20" FontWeight="Bold"/>
+
 		<Grid HorizontalAlignment="Left" Height="333" Margin="10,127,0,0" VerticalAlignment="Top" Width="374">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition/>
